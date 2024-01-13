@@ -21,19 +21,21 @@ const server = http.createServer((req, res) => {
       res.end();
       break;
     case "/about":
-        res.statusCode = 200;
+      res.statusCode = 200;
       res.setHeader("Content-Type", "text/html");
       res.write('<h1 style="color: red; text-aligne = center">About:</h1>');
-      res.write("<p>WOW!!! I am a guinuis LOL...This is my first attempt to create a back-end application and it is really cool!...</p>");
+      res.write(
+        "<p>WOW!!! I am a guinuis LOL...This is my first attempt to create a back-end application and it is really cool!...</p>"
+      );
       res.write('<a href="http://localhost:3000/"> Home </a> <br/>');
       res.write('<a href="http://localhost:3000/about"> About </a><br/>');
       res.write("<a href='http://localhost:3000/signin'> LogIn </a>");
       res.end();
       break;
     case "/signin":
-        res.statusCode = 200;
+      res.statusCode = 200;
       res.setHeader("Content-Type", "text/html");
-     
+
       res.write("<p>Awesome! since you get here, go ahead and log in:</p>");
       res.write('<h1 style="color: red;text-align: center">Sign IN</h1>');
 
@@ -41,10 +43,9 @@ const server = http.createServer((req, res) => {
       <form style="text-align:center">
       <input type="text" placeholder="Email"/><br/>
       <br/> <input type="text" placeholder="Password" /><br/><br/>
-       <input type="Submit" />
+       <input type="button" value="Submit"/>
       </form>
       `);
-
 
       res.write('<a href="http://localhost:3000/"> Home </a> <br/>');
       res.write('<a href="http://localhost:3000/about"> About </a><br/>');

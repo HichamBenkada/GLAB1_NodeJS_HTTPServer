@@ -36,4 +36,8 @@ A server that listens for communication from the client and returns a response.
 - Browser Check: Success!...Done!
 
 #### Part 5: Open Exploration: 
-Completed! Three routs are added and checked...DONE!
+Completed! Three routes are added and checked...DONE!
+
+Thank you for reading...
+
+-Wow! feeling excited exploring what I can build next-
